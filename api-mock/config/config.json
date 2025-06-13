@@ -1,0 +1,26 @@
+{
+  "server": {
+    "port": 8080,
+    "host": "0.0.0.0"
+  },
+  "stubs": {
+    "directory": "./stubs",
+    "auto_reload": true
+  },
+  "cors": {
+    "enabled": true,
+    "origins": ["*"],
+    "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    "headers": ["Content-Type", "Authorization", "X-Requested-With"]
+  },
+  "logging": {
+    "enabled": true,
+    "level": "debug",
+    "file": "./logs/mock-server.log"
+  },
+  "features": {
+    "request_logging": true,
+    "response_templating": true,
+    "delay_simulation": true
+  }
+}

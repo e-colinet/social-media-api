@@ -1,0 +1,21 @@
+{
+  "priority": 0,
+  "request": {
+    "method": "GET",
+    "urlPattern": ".*"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "message": "This is a minimal mock response",
+      "request": {
+        "method": "{{request.method}}",
+        "url": "{{request.url}}"
+      },
+      "timestamp": "{{now}}"
+    }
+  }
+}
