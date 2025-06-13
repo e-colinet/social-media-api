@@ -1,7 +1,7 @@
 // Client API généré automatiquement
   
 class ApiClient {
-  constructor(baseUrl = 'http://localhost:8000/api') {
+  constructor(baseUrl = 'http://localhost:12000/api') {
     this.baseUrl = baseUrl;
     this.token = null;
   }

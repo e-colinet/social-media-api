@@ -1,0 +1,14 @@
+
+> social-media-api-frontend@1.0.0 dev
+> vite --host 0.0.0.0 --port 12001
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Port 12001 is in use, trying another one...
+Port 12002 is in use, trying another one...
+Port 12003 is in use, trying another one...
+Port 12004 is in use, trying another one...
+
+  VITE v5.4.19  ready in 175 ms
+
+  ➜  Local:   http://localhost:12005/
+  ➜  Network: http://10.2.42.23:12005/
