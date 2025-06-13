@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démo - Social Media API Frontend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .demo-section {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .demo-section h2 {
+            color: #333;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .credentials {
+            background: #e8f4fd;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .feature-list li:before {
+            content: "✅ ";
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .tech-item {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚀 Social Media API - Frontend JavaScript Pur</h1>
+        <p>Interface moderne pour la gestion de profils de réseaux sociaux avec génération automatique de modèles.</p>
+    </header>
+
+    <div class="demo-section">
+        <h2>🎯 Accès à l'application</h2>
+        <p>L'application frontend est maintenant disponible et prête à être utilisée !</p>
+        <a href="/" class="btn">🌟 Ouvrir l'application</a>
+        <a href="https://work-2-nuszbjvsplvachds.prod-runtime.all-hands.dev" class="btn">🌐 Accès externe</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>🔐 Compte de démonstration</h2>
+        <div class="credentials">
+            <strong>Utilisez ces identifiants pour tester l'application :</strong><br>
+            <strong>Email :</strong> demo@example.com<br>
+            <strong>Mot de passe :</strong> password123
+        </div>
+        <p>Ou créez un nouveau compte directement dans l'application.</p>
+    </div>
+
+    <div class="demo-section">
+        <h2>✨ Fonctionnalités principales</h2>
+        <ul class="feature-list">
+            <li><strong>Authentification complète</strong> - Connexion, inscription, déconnexion avec JWT</li>
+            <li><strong>Gestion des profils</strong> - CRUD complet pour les profils de réseaux sociaux</li>
+            <li><strong>Modèles auto-générés</strong> - Synchronisation automatique avec l'API OpenAPI</li>
+            <li><strong>Interface responsive</strong> - Compatible mobile, tablette et desktop</li>
+            <li><strong>Filtres avancés</strong> - Par plateforme et statut d'activité</li>
+            <li><strong>Synchronisation</strong> - Mise à jour des données avec les APIs externes</li>
+            <li><strong>Notifications</strong> - Système de feedback utilisateur en temps réel</li>
+            <li><strong>Validation</strong> - Contrôles côté client avec messages d'erreur</li>
+        </ul>
+    </div>
+
+    <div class="demo-section">
+        <h2>🛠️ Technologies utilisées</h2>
+        <div class="tech-stack">
+            <div class="tech-item">
+                <strong>JavaScript Vanilla</strong><br>
+                <small>ES6+ moderne</small>
+            </div>
+            <div class="tech-item">
+                <strong>Vite</strong><br>
+                <small>Build tool rapide</small>
+            </div>
+            <div class="tech-item">
+                <strong>CSS3</strong><br>
+                <small>Design responsive</small>
+            </div>
+            <div class="tech-item">
+                <strong>OpenAPI</strong><br>
+                <small>Génération automatique</small>
+            </div>
+            <div class="tech-item">
+                <strong>Fetch API</strong><br>
+                <small>Requêtes HTTP natives</small>
+            </div>
+            <div class="tech-item">
+                <strong>LocalStorage</strong><br>
+                <small>Persistance des données</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>🔄 Génération automatique des modèles</h2>
+        <p>Le frontend utilise un système unique de génération automatique des modèles à partir du fichier OpenAPI :</p>
+        
+        <h3>Générer les modèles :</h3>
+        <div class="code-block">npm run generate-models</div>
+        
+        <h3>Vérifier la synchronisation :</h3>
+        <div class="code-block">npm run check-models</div>
+        
+        <p>Cette approche garantit que le frontend reste toujours synchronisé avec l'API backend, même lors de modifications du schéma.</p>
+    </div>
+
+    <div class="demo-section">
+        <h2>🎨 Plateformes supportées</h2>
+        <p>L'application supporte la gestion de profils pour les principales plateformes de réseaux sociaux :</p>
+        <div class="tech-stack">
+            <div class="tech-item">📘 Facebook</div>
+            <div class="tech-item">🐦 Twitter</div>
+            <div class="tech-item">📸 Instagram</div>
+            <div class="tech-item">💼 LinkedIn</div>
+            <div class="tech-item">📺 YouTube</div>
+            <div class="tech-item">🎵 TikTok</div>
+            <div class="tech-item">👻 Snapchat</div>
+            <div class="tech-item">📌 Pinterest</div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>📱 Interface utilisateur</h2>
+        <ul class="feature-list">
+            <li><strong>Dashboard intuitif</strong> - Vue d'ensemble de tous vos profils</li>
+            <li><strong>Cartes visuelles</strong> - Affichage élégant avec avatars et informations</li>
+            <li><strong>Modal de création</strong> - Formulaire complet pour ajouter/modifier des profils</li>
+            <li><strong>Filtres en temps réel</strong> - Recherche instantanée par critères</li>
+            <li><strong>Actions rapides</strong> - Modifier, supprimer, synchroniser en un clic</li>
+            <li><strong>Notifications toast</strong> - Feedback immédiat sur toutes les actions</li>
+        </ul>
+    </div>
+
+    <div class="demo-section">
+        <h2>🚀 Commencer maintenant</h2>
+        <p>Prêt à explorer l'application ? Cliquez sur le bouton ci-dessous pour commencer !</p>
+        <a href="/" class="btn">🎉 Lancer l'application</a>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #ddd;">
+        <p>Frontend JavaScript pur avec génération automatique de modèles OpenAPI</p>
+        <p><small>Développé avec ❤️ pour une expérience utilisateur optimale</small></p>
+    </footer>
+</body>
+</html>

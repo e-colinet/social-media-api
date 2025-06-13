@@ -1,0 +1,19 @@
+{
+  "name": "social-media-api-frontend",
+  "version": "1.0.0",
+  "description": "Frontend JavaScript pur pour l'API Social Media",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 12001",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 12001",
+    "generate-models": "node scripts/generate-models.js",
+    "check-models": "node scripts/generate-models.js --check",
+    "setup": "node scripts/dev-setup.js"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "dependencies": {}
+}

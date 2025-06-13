@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media API - Frontend</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>Social Media API</h1>
+            <nav class="nav">
+                <button id="login-btn" class="nav-btn">Connexion</button>
+                <button id="register-btn" class="nav-btn">Inscription</button>
+                <button id="logout-btn" class="nav-btn hidden">Déconnexion</button>
+                <span id="user-info" class="user-info hidden"></span>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- Section d'authentification -->
+            <section id="auth-section" class="section">
+                <div class="auth-container">
+                    <div id="login-form" class="auth-form">
+                        <h2>Connexion</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="login-email">Email:</label>
+                                <input type="email" id="login-email" value="demo@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">Mot de passe:</label>
+                                <input type="password" id="login-password" value="password123" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Se connecter</button>
+                        </form>
+                    </div>
+
+                    <div id="register-form" class="auth-form hidden">
+                        <h2>Inscription</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="register-name">Nom:</label>
+                                <input type="text" id="register-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-email">Email:</label>
+                                <input type="email" id="register-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password">Mot de passe:</label>
+                                <input type="password" id="register-password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password-confirm">Confirmer le mot de passe:</label>
+                                <input type="password" id="register-password-confirm" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">S'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section des profils de réseaux sociaux -->
+            <section id="profiles-section" class="section hidden">
+                <div class="profiles-container">
+                    <div class="profiles-header">
+                        <h2>Mes Profils de Réseaux Sociaux</h2>
+                        <button id="add-profile-btn" class="btn btn-primary">Ajouter un profil</button>
+                    </div>
+
+                    <div class="filters">
+                        <select id="platform-filter">
+                            <option value="">Toutes les plateformes</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="youtube">YouTube</option>
+                            <option value="tiktok">TikTok</option>
+                            <option value="snapchat">Snapchat</option>
+                            <option value="pinterest">Pinterest</option>
+                        </select>
+                        <label>
+                            <input type="checkbox" id="active-filter" checked>
+                            Profils actifs uniquement
+                        </label>
+                    </div>
+
+                    <div id="profiles-list" class="profiles-list">
+                        <!-- Les profils seront chargés ici -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal pour ajouter/modifier un profil -->
+            <div id="profile-modal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modal-title">Ajouter un profil</h3>
+                        <button id="close-modal" class="close-btn">&times;</button>
+                    </div>
+                    <form id="profile-form">
+                        <div class="form-group">
+                            <label for="profile-platform">Plateforme:</label>
+                            <select id="profile-platform" required>
+                                <option value="">Sélectionner une plateforme</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="tiktok">TikTok</option>
+                                <option value="snapchat">Snapchat</option>
+                                <option value="pinterest">Pinterest</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-platform-user-id">ID utilisateur plateforme:</label>
+                            <input type="text" id="profile-platform-user-id" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-username">Nom d'utilisateur:</label>
+                            <input type="text" id="profile-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-display-name">Nom d'affichage:</label>
+                            <input type="text" id="profile-display-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-url">URL du profil:</label>
+                            <input type="url" id="profile-url">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-avatar-url">URL de l'avatar:</label>
+                            <input type="url" id="profile-avatar-url">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-bio">Bio:</label>
+                            <textarea id="profile-bio" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="profile-is-active" checked>
+                                Profil actif
+                            </label>
+                        </div>
+                        <div class="modal-actions">
+                            <button type="button" id="cancel-profile" class="btn btn-secondary">Annuler</button>
+                            <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Zone de notifications -->
+        <div id="notifications" class="notifications"></div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
