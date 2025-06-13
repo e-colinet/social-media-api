@@ -12,3 +12,36 @@ Port 12004 is in use, trying another one...
 
   ➜  Local:   http://localhost:12005/
   ➜  Network: http://10.2.42.23:12005/
+12:56:50 PM [vite] page reload src/api/client.js
+12:57:23 PM [vite] page reload src/api/client.js
+
+> social-media-api-frontend@1.0.0 dev
+> vite --host 0.0.0.0 --port 12001
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Port 12001 is in use, trying another one...
+Port 12002 is in use, trying another one...
+Port 12003 is in use, trying another one...
+Port 12004 is in use, trying another one...
+Port 12005 is in use, trying another one...
+
+  VITE v5.4.19  ready in 170 ms
+
+  ➜  Local:   http://localhost:12006/
+  ➜  Network: http://10.2.42.23:12006/
+12:58:48 PM [vite] page reload src/api/client.js
+12:58:48 PM [vite] page reload src/api/client.js
+1:00:17 PM [vite] page reload src/api/client.js
+1:00:17 PM [vite] page reload src/api/client.js
+1:00:36 PM [vite] page reload src/api/client.js
+1:00:36 PM [vite] page reload src/api/client.js
+1:04:31 PM [vite] page reload src/api/client.js
+1:04:31 PM [vite] page reload src/api/client.js
+1:04:42 PM [vite] page reload src/api/client.js
+1:04:42 PM [vite] page reload src/api/client.js
+1:05:04 PM [vite] page reload src/api/client.js
+1:05:04 PM [vite] page reload src/api/client.js
+1:05:09 PM [vite] page reload src/api/client.js
+1:05:09 PM [vite] page reload src/api/client.js
+1:05:25 PM [vite] page reload src/api/client.js
+1:05:25 PM [vite] page reload src/api/client.js

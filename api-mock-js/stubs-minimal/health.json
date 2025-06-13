@@ -1,0 +1,18 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "url": "/health"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "status": "ok",
+      "message": "Minimal mock server is running",
+      "timestamp": "{{now}}"
+    }
+  }
+}

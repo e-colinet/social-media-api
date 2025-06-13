@@ -1,8 +1,8 @@
 // Modèles générés automatiquement à partir du fichier OpenAPI
 
-export * from './User.js';
-export * from './SocialMediaProfile.js';
-export * from './SocialMediaProfileInput.js';
-export * from './AuthResponse.js';
-export * from './ErrorResponse.js';
-export * from './ValidationError.js';
+export { User } from './User.js';
+export { SocialMediaProfile } from './SocialMediaProfile.js';
+export { SocialMediaProfileInput } from './SocialMediaProfileInput.js';
+export { AuthResponse } from './AuthResponse.js';
+export { ErrorResponse } from './ErrorResponse.js';
+export { ValidationError } from './ValidationError.js';

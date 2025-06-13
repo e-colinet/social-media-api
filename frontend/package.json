@@ -1,14 +1,18 @@
 {
   "name": "social-media-api-frontend",
   "version": "1.0.0",
-  "description": "Frontend JavaScript pur pour l'API Social Media",
+  "description": "Frontend JavaScript pur pour l'API Social Media avec génération de modèles OpenAPI",
+  "type": "module",
   "main": "index.html",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 12001",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port 12001",
-    "generate-models": "node scripts/generate-models.js",
-    "check-models": "node scripts/generate-models.js --check",
+    "generate-models": "node scripts/model-manager.js generate",
+    "check-models": "node scripts/model-manager.js check",
+    "models-stats": "node scripts/model-manager.js stats",
+    "models-clean": "node scripts/model-manager.js clean",
+    "test-integration": "node scripts/test-integration.js",
     "setup": "node scripts/dev-setup.js"
   },
   "devDependencies": {

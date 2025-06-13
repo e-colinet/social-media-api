@@ -1,0 +1,530 @@
+Starting Mock Server...
+Host: 0.0.0.0
+Port: 8090
+Stubs Directory: /workspace/social-media-api/api-mock-js/stubs
+Debug Mode: ON
+
+✅ Loaded stub: 01-health-check.json
+✅ Loaded stub: 02-auth-register.json
+✅ Loaded stub: 03-auth-login.json
+✅ Loaded stub: 04-auth-logout.json
+✅ Loaded stub: 05-user-profile.json
+✅ Loaded stub: 06-social-profiles-list.json
+✅ Loaded stub: 07-social-profile-create.json
+✅ Loaded stub: 08-social-profile-show.json
+✅ Loaded stub: 09-social-profile-update.json
+✅ Loaded stub: 10-social-profile-delete.json
+✅ Loaded stub: 11-social-profiles-by-platform.json
+✅ Loaded stub: 12-social-profile-sync.json
+✅ Loaded stub: 99-not-found.json
+📦 Loaded 13 stubs from /workspace/social-media-api/api-mock-js/stubs
+🚀 Mock Server started on http://0.0.0.0:8090
+📁 Stubs directory: /workspace/social-media-api/api-mock-js/stubs
+📊 Loaded 13 stubs
+🔧 Debug mode: ON
+🌐 CORS: ENABLED
+
+Press Ctrl+C to stop the server
+=====================================
+
+📥 GET /health
+✅ Matched stub: 99-not-found.json (priority: 5)
+📤 Response: 404 (154 bytes)
+
+🛑 Stopping server...
+
+🛑 Shutting down mock server...
+Mock server stopped
+Starting Mock Server...
+Host: 0.0.0.0
+Port: 8090
+Stubs Directory: /workspace/social-media-api/api-mock-js/stubs
+Debug Mode: ON
+
+✅ Loaded stub: 01-health-check.json
+✅ Loaded stub: 02-auth-register.json
+✅ Loaded stub: 03-auth-login.json
+✅ Loaded stub: 04-auth-logout.json
+✅ Loaded stub: 05-user-profile.json
+✅ Loaded stub: 06-social-profiles-list.json
+✅ Loaded stub: 07-social-profile-create.json
+✅ Loaded stub: 08-social-profile-show.json
+✅ Loaded stub: 09-social-profile-update.json
+✅ Loaded stub: 10-social-profile-delete.json
+✅ Loaded stub: 11-social-profiles-by-platform.json
+✅ Loaded stub: 12-social-profile-sync.json
+✅ Loaded stub: 99-not-found.json
+📦 Loaded 13 stubs from /workspace/social-media-api/api-mock-js/stubs
+🚀 Mock Server started on http://0.0.0.0:8090
+📁 Stubs directory: /workspace/social-media-api/api-mock-js/stubs
+📊 Loaded 13 stubs
+🔧 Debug mode: ON
+🌐 CORS: ENABLED
+
+Press Ctrl+C to stop the server
+=====================================
+
+📥 GET /health
+✅ Matched stub: 99-not-found.json (priority: 5)
+📤 Response: 404 (154 bytes)
+
+🛑 Stopping server...
+
+🛑 Shutting down mock server...
+Mock server stopped
+Starting Mock Server...
+Host: 0.0.0.0
+Port: 8090
+Stubs Directory: /workspace/social-media-api/api-mock-js/stubs
+Debug Mode: ON
+
+✅ Loaded stub: 01-health-check.json
+✅ Loaded stub: 02-auth-register.json
+✅ Loaded stub: 03-auth-login.json
+✅ Loaded stub: 04-auth-logout.json
+✅ Loaded stub: 05-user-profile.json
+✅ Loaded stub: 06-social-profiles-list.json
+✅ Loaded stub: 07-social-profile-create.json
+✅ Loaded stub: 08-social-profile-show.json
+✅ Loaded stub: 09-social-profile-update.json
+✅ Loaded stub: 10-social-profile-delete.json
+✅ Loaded stub: 11-social-profiles-by-platform.json
+✅ Loaded stub: 12-social-profile-sync.json
+✅ Loaded stub: 99-not-found.json
+📦 Loaded 13 stubs from /workspace/social-media-api/api-mock-js/stubs
+🚀 Mock Server started on http://0.0.0.0:8090
+📁 Stubs directory: /workspace/social-media-api/api-mock-js/stubs
+📊 Loaded 13 stubs
+🔧 Debug mode: ON
+🌐 CORS: ENABLED
+
+Press Ctrl+C to stop the server
+=====================================
+
+📥 GET /health
+✅ Matched stub: 99-not-found.json (priority: 5)
+📤 Response: 404 (154 bytes)
+
+🛑 Stopping server...
+
+🛑 Shutting down mock server...
+Mock server stopped
+Starting Mock Server...
+Host: 0.0.0.0
+Port: 8090
+Stubs Directory: /workspace/social-media-api/api-mock-js/stubs
+Debug Mode: ON
+
+✅ Loaded stub: 01-health-check.json
+✅ Loaded stub: 02-auth-register.json
+✅ Loaded stub: 03-auth-login.json
+✅ Loaded stub: 04-auth-logout.json
+✅ Loaded stub: 05-user-profile.json
+✅ Loaded stub: 06-social-profiles-list.json
+✅ Loaded stub: 07-social-profile-create.json
+✅ Loaded stub: 08-social-profile-show.json
+✅ Loaded stub: 09-social-profile-update.json
+✅ Loaded stub: 10-social-profile-delete.json
+✅ Loaded stub: 11-social-profiles-by-platform.json
+✅ Loaded stub: 12-social-profile-sync.json
+✅ Loaded stub: 99-not-found.json
+📦 Loaded 13 stubs from /workspace/social-media-api/api-mock-js/stubs
+📋 Stub order by priority:
+  1. 99-not-found.json (priority: 5) - ANY .*
+  2. 11-social-profiles-by-platform.json (priority: 4) - GET /social-media-profiles/platform/\w+
+  3. 06-social-profiles-list.json (priority: 3) - GET /social-media-profiles
+  4. 07-social-profile-create.json (priority: 3) - POST /social-media-profiles
+  5. 08-social-profile-show.json (priority: 3) - GET /social-media-profiles/\d+
+  6. 09-social-profile-update.json (priority: 3) - PUT /social-media-profiles/\d+
+  7. 10-social-profile-delete.json (priority: 3) - DELETE /social-media-profiles/\d+
+  8. 12-social-profile-sync.json (priority: 3) - POST /social-media-profiles/\d+/sync
+  9. 02-auth-register.json (priority: 2) - POST /auth/register
+  10. 03-auth-login.json (priority: 2) - POST /auth/login
+  11. 04-auth-logout.json (priority: 2) - POST /auth/logout
+  12. 05-user-profile.json (priority: 2) - GET /user
+  13. 01-health-check.json (priority: 1) - GET /health
+🚀 Mock Server started on http://0.0.0.0:8090
+📁 Stubs directory: /workspace/social-media-api/api-mock-js/stubs
+📊 Loaded 13 stubs
+🔧 Debug mode: ON
+🌐 CORS: ENABLED
+
+Press Ctrl+C to stop the server
+=====================================
+
+📥 GET /health
+✅ Matched stub: 99-not-found.json (priority: 5)
+📤 Response: 404 (154 bytes)
+
+🛑 Stopping server...
+
+🛑 Shutting down mock server...
+Mock server stopped
+Starting Mock Server...
+Host: 0.0.0.0
+Port: 8090
+Stubs Directory: /workspace/social-media-api/api-mock-js/stubs
+Debug Mode: ON
+
+✅ Loaded stub: 01-health-check.json
+✅ Loaded stub: 02-auth-register.json
+✅ Loaded stub: 03-auth-login.json
+✅ Loaded stub: 04-auth-logout.json
+✅ Loaded stub: 05-user-profile.json
+✅ Loaded stub: 06-social-profiles-list.json
+✅ Loaded stub: 07-social-profile-create.json
+✅ Loaded stub: 08-social-profile-show.json
+✅ Loaded stub: 09-social-profile-update.json
+✅ Loaded stub: 10-social-profile-delete.json
+✅ Loaded stub: 11-social-profiles-by-platform.json
+✅ Loaded stub: 12-social-profile-sync.json
+✅ Loaded stub: 99-not-found.json
+📦 Loaded 13 stubs from /workspace/social-media-api/api-mock-js/stubs
+📋 Stub order by priority:
+  1. 11-social-profiles-by-platform.json (priority: 4) - GET /social-media-profiles/platform/\w+
+  2. 06-social-profiles-list.json (priority: 3) - GET /social-media-profiles
+  3. 07-social-profile-create.json (priority: 3) - POST /social-media-profiles
+  4. 08-social-profile-show.json (priority: 3) - GET /social-media-profiles/\d+
+  5. 09-social-profile-update.json (priority: 3) - PUT /social-media-profiles/\d+
+  6. 10-social-profile-delete.json (priority: 3) - DELETE /social-media-profiles/\d+
+  7. 12-social-profile-sync.json (priority: 3) - POST /social-media-profiles/\d+/sync
+  8. 02-auth-register.json (priority: 2) - POST /auth/register
+  9. 03-auth-login.json (priority: 2) - POST /auth/login
+  10. 04-auth-logout.json (priority: 2) - POST /auth/logout
+  11. 05-user-profile.json (priority: 2) - GET /user
+  12. 01-health-check.json (priority: 1) - GET /health
+  13. 99-not-found.json (priority: 0) - ANY .*
+🚀 Mock Server started on http://0.0.0.0:8090
+📁 Stubs directory: /workspace/social-media-api/api-mock-js/stubs
+📊 Loaded 13 stubs
+🔧 Debug mode: ON
+🌐 CORS: ENABLED
+
+Press Ctrl+C to stop the server
+=====================================
+
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 POST /auth/login
+   Body: {"email":"demo@example.com","password":"password123"}
+✅ Matched stub: 03-auth-login.json (priority: 2)
+📤 Response: 200 (575 bytes)
+📥 GET /social-media-profiles
+✅ Matched stub: 06-social-profiles-list.json (priority: 3)
+📤 Response: 200 (1756 bytes)
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 POST /auth/login
+   Body: {"email":"demo@example.com","password":"password123"}
+✅ Matched stub: 03-auth-login.json (priority: 2)
+📤 Response: 200 (575 bytes)
+📥 POST /auth/register
+   Body: {"name":"Test User","email":"test@example.com","password":"password123"}
+✅ Matched stub: 02-auth-register.json (priority: 2)
+📤 Response: 201 (560 bytes)
+📥 GET /user
+✅ Matched stub: 05-user-profile.json (priority: 2)
+📤 Response: 200 (259 bytes)
+📥 GET /social-media-profiles
+✅ Matched stub: 06-social-profiles-list.json (priority: 3)
+📤 Response: 200 (1756 bytes)
+📥 GET /social-media-profiles/1
+✅ Matched stub: 08-social-profile-show.json (priority: 3)
+📤 Response: 200 (540 bytes)
+📥 POST /social-media-profiles
+   Body: {"platform":"linkedin","username":"test-user"}
+✅ Matched stub: 07-social-profile-create.json (priority: 3)
+📤 Response: 201 (502 bytes)
+📥 PUT /social-media-profiles/1
+   Body: {"username":"updated-user"}
+✅ Matched stub: 09-social-profile-update.json (priority: 3)
+📤 Response: 200 (611 bytes)
+📥 POST /social-media-profiles/1/sync
+✅ Matched stub: 12-social-profile-sync.json (priority: 3)
+📤 Response: 200 (652 bytes)
+   Delay: 1500ms
+📥 GET /social-media-profiles/platform/twitter
+✅ Matched stub: 11-social-profiles-by-platform.json (priority: 4)
+📤 Response: 200 (631 bytes)
+📥 DELETE /social-media-profiles/1
+✅ Matched stub: 10-social-profile-delete.json (priority: 3)
+📤 Response: 200 (79 bytes)
+📥 POST /auth/logout
+✅ Matched stub: 04-auth-logout.json (priority: 2)
+📤 Response: 200 (61 bytes)
+📥 GET /non-existent-endpoint
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (169 bytes)
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 POST /login
+   Body: {"email":"demo@example.com","password":"password123"}
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (154 bytes)
+📥 GET /user
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (152 bytes)
+📥 GET /social-media-profiles
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (169 bytes)
+📥 POST /social-media-profiles
+   Body: {"platform":"twitter","platform_user_id":"test_user_123","username":"test_user","display_name":"Test User","profile_url":"https://twitter.com/test_user","bio":"Profile de test créé par le script d'int...
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (170 bytes)
+📥 GET /social-media-profiles-by-platform
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (181 bytes)
+📥 POST /logout
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (155 bytes)
+
+🛑 Stopping server...
+
+🛑 Shutting down mock server...
+Mock server stopped
+Starting Mock Server...
+Host: 0.0.0.0
+Port: 8090
+Stubs Directory: /workspace/social-media-api/api-mock-js/stubs
+Debug Mode: ON
+
+✅ Loaded stub: 01-health-check.json
+✅ Loaded stub: 02-auth-register.json
+✅ Loaded stub: 03-auth-login.json
+✅ Loaded stub: 04-auth-logout.json
+✅ Loaded stub: 05-user-profile.json
+✅ Loaded stub: 06-social-profiles-list.json
+✅ Loaded stub: 07-social-profile-create.json
+✅ Loaded stub: 08-social-profile-show.json
+✅ Loaded stub: 09-social-profile-update.json
+✅ Loaded stub: 10-social-profile-delete.json
+✅ Loaded stub: 11-social-profiles-by-platform.json
+✅ Loaded stub: 12-social-profile-sync.json
+✅ Loaded stub: 99-not-found.json
+📦 Loaded 13 stubs from /workspace/social-media-api/api-mock-js/stubs
+📋 Stub order by priority:
+  1. 11-social-profiles-by-platform.json (priority: 4) - GET /social-media-profiles/platform/\w+
+  2. 06-social-profiles-list.json (priority: 3) - GET /social-media-profiles
+  3. 07-social-profile-create.json (priority: 3) - POST /social-media-profiles
+  4. 08-social-profile-show.json (priority: 3) - GET /social-media-profiles/\d+
+  5. 09-social-profile-update.json (priority: 3) - PUT /social-media-profiles/\d+
+  6. 10-social-profile-delete.json (priority: 3) - DELETE /social-media-profiles/\d+
+  7. 12-social-profile-sync.json (priority: 3) - POST /social-media-profiles/\d+/sync
+  8. 02-auth-register.json (priority: 2) - POST /register
+  9. 03-auth-login.json (priority: 2) - POST /login
+  10. 04-auth-logout.json (priority: 2) - POST /logout
+  11. 05-user-profile.json (priority: 2) - GET /user
+  12. 01-health-check.json (priority: 1) - GET /health
+  13. 99-not-found.json (priority: 0) - ANY .*
+🚀 Mock Server started on http://0.0.0.0:8090
+📁 Stubs directory: /workspace/social-media-api/api-mock-js/stubs
+📊 Loaded 13 stubs
+🔧 Debug mode: ON
+🌐 CORS: ENABLED
+
+Press Ctrl+C to stop the server
+=====================================
+
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 POST /login
+   Body: {"email":"demo@example.com","password":"password123"}
+✅ Matched stub: 03-auth-login.json (priority: 2)
+📤 Response: 200 (575 bytes)
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 POST /login
+   Body: {"email":"demo@example.com","password":"password123"}
+✅ Matched stub: 03-auth-login.json (priority: 2)
+📤 Response: 200 (575 bytes)
+📥 GET /user
+✅ Matched stub: 05-user-profile.json (priority: 2)
+📤 Response: 200 (259 bytes)
+📥 GET /social-media-profiles
+✅ Matched stub: 06-social-profiles-list.json (priority: 3)
+📤 Response: 200 (1756 bytes)
+📥 POST /social-media-profiles
+   Body: {"platform":"twitter","platform_user_id":"test_user_123","username":"test_user","display_name":"Test User","profile_url":"https://twitter.com/test_user","bio":"Profile de test créé par le script d'int...
+✅ Matched stub: 07-social-profile-create.json (priority: 3)
+📤 Response: 201 (502 bytes)
+📥 PUT /social-media-profiles/%7Bid%7D
+   Body: 264
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (178 bytes)
+📥 POST /social-media-profiles/%7Bid%7D/sync
+   Body: 264
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (184 bytes)
+📥 GET /social-media-profiles-by-platform
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (181 bytes)
+📥 DELETE /social-media-profiles/%7Bid%7D
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (181 bytes)
+📥 POST /logout
+✅ Matched stub: 04-auth-logout.json (priority: 2)
+📤 Response: 200 (61 bytes)
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 POST /login
+   Body: {"email":"demo@example.com","password":"password123"}
+✅ Matched stub: 03-auth-login.json (priority: 2)
+📤 Response: 200 (575 bytes)
+📥 GET /user
+✅ Matched stub: 05-user-profile.json (priority: 2)
+📤 Response: 200 (259 bytes)
+📥 GET /social-media-profiles
+✅ Matched stub: 06-social-profiles-list.json (priority: 3)
+📤 Response: 200 (1756 bytes)
+📥 POST /social-media-profiles
+   Body: {"platform":"twitter","platform_user_id":"test_user_123","username":"test_user","display_name":"Test User","profile_url":"https://twitter.com/test_user","bio":"Profile de test créé par le script d'int...
+✅ Matched stub: 07-social-profile-create.json (priority: 3)
+📤 Response: 201 (502 bytes)
+📥 PUT /social-media-profiles/629
+   Body: {"bio":"Bio mise à jour par le test d'intégration","display_name":"Test User Updated"}
+✅ Matched stub: 09-social-profile-update.json (priority: 3)
+📤 Response: 200 (613 bytes)
+📥 POST /social-media-profiles/629/sync
+✅ Matched stub: 12-social-profile-sync.json (priority: 3)
+📤 Response: 200 (654 bytes)
+   Delay: 1500ms
+📥 GET /social-media-profiles-by-platform
+✅ Matched stub: 99-not-found.json (priority: 0)
+📤 Response: 404 (181 bytes)
+📥 DELETE /social-media-profiles/629
+✅ Matched stub: 10-social-profile-delete.json (priority: 3)
+📤 Response: 200 (79 bytes)
+📥 POST /logout
+✅ Matched stub: 04-auth-logout.json (priority: 2)
+📤 Response: 200 (61 bytes)
+
+🛑 Stopping server...
+
+🛑 Shutting down mock server...
+Mock server stopped
+Starting Mock Server...
+Host: 0.0.0.0
+Port: 8090
+Stubs Directory: /workspace/social-media-api/api-mock-js/stubs
+Debug Mode: ON
+
+✅ Loaded stub: 01-health-check.json
+✅ Loaded stub: 02-auth-register.json
+✅ Loaded stub: 03-auth-login.json
+✅ Loaded stub: 04-auth-logout.json
+✅ Loaded stub: 05-user-profile.json
+✅ Loaded stub: 06-social-profiles-list.json
+✅ Loaded stub: 07-social-profile-create.json
+✅ Loaded stub: 08-social-profile-show.json
+✅ Loaded stub: 09-social-profile-update.json
+✅ Loaded stub: 10-social-profile-delete.json
+✅ Loaded stub: 11-social-profiles-by-platform.json
+✅ Loaded stub: 12-social-profile-sync.json
+✅ Loaded stub: 99-not-found.json
+📦 Loaded 13 stubs from /workspace/social-media-api/api-mock-js/stubs
+📋 Stub order by priority:
+  1. 11-social-profiles-by-platform.json (priority: 4) - GET /social-media-profiles-by-platform
+  2. 06-social-profiles-list.json (priority: 3) - GET /social-media-profiles
+  3. 07-social-profile-create.json (priority: 3) - POST /social-media-profiles
+  4. 08-social-profile-show.json (priority: 3) - GET /social-media-profiles/\d+
+  5. 09-social-profile-update.json (priority: 3) - PUT /social-media-profiles/\d+
+  6. 10-social-profile-delete.json (priority: 3) - DELETE /social-media-profiles/\d+
+  7. 12-social-profile-sync.json (priority: 3) - POST /social-media-profiles/\d+/sync
+  8. 02-auth-register.json (priority: 2) - POST /register
+  9. 03-auth-login.json (priority: 2) - POST /login
+  10. 04-auth-logout.json (priority: 2) - POST /logout
+  11. 05-user-profile.json (priority: 2) - GET /user
+  12. 01-health-check.json (priority: 1) - GET /health
+  13. 99-not-found.json (priority: 0) - ANY .*
+🚀 Mock Server started on http://0.0.0.0:8090
+📁 Stubs directory: /workspace/social-media-api/api-mock-js/stubs
+📊 Loaded 13 stubs
+🔧 Debug mode: ON
+🌐 CORS: ENABLED
+
+Press Ctrl+C to stop the server
+=====================================
+
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 POST /login
+   Body: {"email":"demo@example.com","password":"password123"}
+✅ Matched stub: 03-auth-login.json (priority: 2)
+📤 Response: 200 (575 bytes)
+📥 GET /user
+✅ Matched stub: 05-user-profile.json (priority: 2)
+📤 Response: 200 (259 bytes)
+📥 GET /social-media-profiles
+✅ Matched stub: 06-social-profiles-list.json (priority: 3)
+📤 Response: 200 (1756 bytes)
+📥 POST /social-media-profiles
+   Body: {"platform":"twitter","platform_user_id":"test_user_123","username":"test_user","display_name":"Test User","profile_url":"https://twitter.com/test_user","bio":"Profile de test créé par le script d'int...
+✅ Matched stub: 07-social-profile-create.json (priority: 3)
+📤 Response: 201 (502 bytes)
+📥 PUT /social-media-profiles/626
+   Body: {"bio":"Bio mise à jour par le test d'intégration","display_name":"Test User Updated"}
+✅ Matched stub: 09-social-profile-update.json (priority: 3)
+📤 Response: 200 (613 bytes)
+📥 POST /social-media-profiles/626/sync
+✅ Matched stub: 12-social-profile-sync.json (priority: 3)
+📤 Response: 200 (653 bytes)
+   Delay: 1500ms
+📥 GET /social-media-profiles-by-platform
+✅ Matched stub: 11-social-profiles-by-platform.json (priority: 4)
+📤 Response: 200 (1259 bytes)
+📥 DELETE /social-media-profiles/626
+✅ Matched stub: 10-social-profile-delete.json (priority: 3)
+📤 Response: 200 (79 bytes)
+📥 POST /logout
+✅ Matched stub: 04-auth-logout.json (priority: 2)
+📤 Response: 200 (61 bytes)
+📥 GET /social-media-profiles-by-platform
+✅ Matched stub: 11-social-profiles-by-platform.json (priority: 4)
+📤 Response: 200 (1259 bytes)
+📥 GET /health
+✅ Matched stub: 01-health-check.json (priority: 1)
+📤 Response: 200 (95 bytes)
+📥 POST /login
+   Body: {"email":"demo@example.com","password":"password123"}
+✅ Matched stub: 03-auth-login.json (priority: 2)
+📤 Response: 200 (575 bytes)
+📥 GET /user
+✅ Matched stub: 05-user-profile.json (priority: 2)
+📤 Response: 200 (259 bytes)
+📥 GET /social-media-profiles
+✅ Matched stub: 06-social-profiles-list.json (priority: 3)
+📤 Response: 200 (1756 bytes)
+📥 POST /social-media-profiles
+   Body: {"platform":"twitter","platform_user_id":"test_user_123","username":"test_user","display_name":"Test User","profile_url":"https://twitter.com/test_user","bio":"Profile de test créé par le script d'int...
+✅ Matched stub: 07-social-profile-create.json (priority: 3)
+📤 Response: 201 (502 bytes)
+📥 PUT /social-media-profiles/694
+   Body: {"bio":"Bio mise à jour par le test d'intégration","display_name":"Test User Updated"}
+✅ Matched stub: 09-social-profile-update.json (priority: 3)
+📤 Response: 200 (613 bytes)
+📥 POST /social-media-profiles/694/sync
+✅ Matched stub: 12-social-profile-sync.json (priority: 3)
+📤 Response: 200 (653 bytes)
+   Delay: 1500ms
+📥 GET /social-media-profiles-by-platform
+✅ Matched stub: 11-social-profiles-by-platform.json (priority: 4)
+📤 Response: 200 (1259 bytes)
+📥 DELETE /social-media-profiles/694
+✅ Matched stub: 10-social-profile-delete.json (priority: 3)
+📤 Response: 200 (79 bytes)
+📥 POST /logout
+✅ Matched stub: 04-auth-logout.json (priority: 2)
+📤 Response: 200 (61 bytes)

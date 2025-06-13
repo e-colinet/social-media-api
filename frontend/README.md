@@ -1,6 +1,6 @@
 # Frontend Social Media API
 
-Frontend JavaScript pur pour l'API Social Media. Ce frontend utilise des modèles générés automatiquement à partir du fichier OpenAPI.
+Frontend JavaScript pur pour l'API Social Media avec génération automatique de modèles à partir du fichier OpenAPI.
 
 ## 🚀 Démarrage rapide
 

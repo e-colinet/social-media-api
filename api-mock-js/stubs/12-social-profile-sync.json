@@ -1,0 +1,41 @@
+{
+  "priority": 3,
+  "request": {
+    "method": "POST",
+    "urlPattern": "/social-media-profiles/\\d+/sync",
+    "headers": {
+      "Authorization": {
+        "matches": "Bearer .*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "fixedDelayMilliseconds": 1500,
+    "jsonBody": {
+      "success": true,
+      "message": "Profile synchronized successfully",
+      "data": {
+        "id": "{{request.pathSegments.1}}",
+        "user_id": 1,
+        "platform": "twitter",
+        "username": "demo_user",
+        "profile_url": "https://twitter.com/demo_user",
+        "follower_count": "{{randomValue type='INT' min=1000 max=5000}}",
+        "following_count": "{{randomValue type='INT' min=500 max=2000}}",
+        "bio": "Synchronized demo profile",
+        "avatar_url": "https://pbs.twimg.com/profile_images/synced.jpg",
+        "is_verified": false,
+        "is_active": true,
+        "last_sync_at": "{{now}}",
+        "created_at": "2024-01-01T00:00:00.000000Z",
+        "updated_at": "{{now}}",
+        "sync_status": "completed",
+        "sync_duration_ms": 1500
+      }
+    }
+  }
+}

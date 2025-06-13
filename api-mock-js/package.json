@@ -1,0 +1,27 @@
+{
+  "name": "api-mock-js",
+  "version": "1.0.0",
+  "description": "JavaScript Mock Server compatible with WireMock syntax",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node start.js",
+    "test": "node test.js",
+    "validate": "node manage.js validate",
+    "dev": "node start.js --debug"
+  },
+  "keywords": [
+    "mock",
+    "server",
+    "wiremock",
+    "api",
+    "testing"
+  ],
+  "author": "OpenHands",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
