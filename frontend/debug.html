@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - Social Media API</title>
+</head>
+<body>
+    <h1>Debug Page</h1>
+    <button onclick="testImports()">Test Imports</button>
+    <button onclick="testLogin()">Test Login</button>
+    <div id="result"></div>
+
+    <script type="module">
+        import { apiClient } from './src/api/client.js';
+        import { authManager } from './src/utils/auth.js';
+        import { notifications } from './src/utils/notifications.js';
+
+        window.testImports = function() {
+            const resultDiv = document.getElementById('result');
+            try {
+                console.log('apiClient:', apiClient);
+                console.log('authManager:', authManager);
+                console.log('notifications:', notifications);
+                resultDiv.innerHTML = 'Imports successful! Check console for details.';
+            } catch (error) {
+                console.error('Import error:', error);
+                resultDiv.innerHTML = 'Import error: ' + error.message;
+            }
+        };
+
+        window.testLogin = async function() {
+            const resultDiv = document.getElementById('result');
+            try {
+                console.log('Testing login...');
+                const response = await apiClient.postLogin({ 
+                    email: 'admin@example.com', 
+                    password: 'admin123' 
+                });
+                console.log('Login response:', response);
+                resultDiv.innerHTML = '<pre>' + JSON.stringify(response, null, 2) + '</pre>';
+            } catch (error) {
+                console.error('Login error:', error);
+                resultDiv.innerHTML = 'Login error: ' + error.message;
+            }
+        };
+    </script>
+</body>
+</html>

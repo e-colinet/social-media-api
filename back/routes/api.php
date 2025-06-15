@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\SocialMediaProfileController;
+use App\Http\Controllers\Api\Admin\AdminUserController;
+use App\Http\Controllers\Api\Admin\AdminSocialMediaProfileController;
+use App\Http\Controllers\Api\Admin\AdminDashboardController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +35,22 @@ Route::middleware('auth:api')->group(function () {
     // Additional profile routes
     Route::get('/social-media-profiles-by-platform', [SocialMediaProfileController::class, 'byPlatform']);
     Route::post('/social-media-profiles/{socialMediaProfile}/sync', [SocialMediaProfileController::class, 'sync']);
+});
+
+// Admin routes
+Route::middleware(['auth:api', 'admin'])->prefix('admin')->group(function () {
+    // Dashboard
+    Route::get('/dashboard/overview', [AdminDashboardController::class, 'overview']);
+    Route::get('/dashboard/system-info', [AdminDashboardController::class, 'systemInfo']);
+    
+    // User management
+    Route::apiResource('users', AdminUserController::class);
+    Route::get('/users-stats', [AdminUserController::class, 'stats']);
+    
+    // Social Media Profile management
+    Route::apiResource('social-media-profiles', AdminSocialMediaProfileController::class);
+    Route::get('/social-media-profiles-stats', [AdminSocialMediaProfileController::class, 'stats']);
+    Route::delete('/social-media-profiles-bulk', [AdminSocialMediaProfileController::class, 'bulkDelete']);
 });
 
 // Health check route

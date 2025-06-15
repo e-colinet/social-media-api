@@ -5,12 +5,21 @@ import { authManager } from './utils/auth.js';
 import { notifications } from './utils/notifications.js';
 import { ProfileCard } from './components/ProfileCard.js';
 import { ProfileModal } from './components/ProfileModal.js';
+import { AdminDashboard } from './components/AdminDashboard.js';
+import { AdminUserManager } from './components/AdminUserManager.js';
+import { AdminProfileManager } from './components/AdminProfileManager.js';
 
 class SocialMediaApp {
   constructor() {
     this.profiles = [];
     this.filteredProfiles = [];
     this.currentUser = null;
+    this.currentView = 'profiles'; // 'profiles', 'admin-dashboard', 'admin-users', 'admin-profiles'
+    
+    // Admin components
+    this.adminDashboard = null;
+    this.adminUserManager = null;
+    this.adminProfileManager = null;
     
     this.initializeApp();
   }
@@ -71,6 +80,25 @@ class SocialMediaApp {
     // Filtres
     document.getElementById('platform-filter').addEventListener('change', () => this.applyFilters());
     document.getElementById('active-filter').addEventListener('change', () => this.applyFilters());
+
+    // Admin navigation
+    const adminDashboardBtn = document.getElementById('admin-dashboard-btn');
+    const adminUsersBtn = document.getElementById('admin-users-btn');
+    const adminProfilesBtn = document.getElementById('admin-profiles-btn');
+    const backToProfilesBtn = document.getElementById('back-to-profiles-btn');
+
+    if (adminDashboardBtn) {
+      adminDashboardBtn.addEventListener('click', () => this.showAdminDashboard());
+    }
+    if (adminUsersBtn) {
+      adminUsersBtn.addEventListener('click', () => this.showAdminUsers());
+    }
+    if (adminProfilesBtn) {
+      adminProfilesBtn.addEventListener('click', () => this.showAdminProfiles());
+    }
+    if (backToProfilesBtn) {
+      backToProfilesBtn.addEventListener('click', () => this.showUserProfiles());
+    }
   }
 
   initializeModal() {
@@ -98,6 +126,16 @@ class SocialMediaApp {
     document.getElementById('register-btn').classList.add('hidden');
     document.getElementById('logout-btn').classList.remove('hidden');
     document.getElementById('user-info').classList.remove('hidden');
+    
+    // Show/hide admin navigation based on user role
+    const adminNav = document.getElementById('admin-nav');
+    if (adminNav) {
+      if (this.currentUser && this.currentUser.is_admin) {
+        adminNav.classList.remove('hidden');
+      } else {
+        adminNav.classList.add('hidden');
+      }
+    }
     
     if (this.currentUser) {
       document.getElementById('user-info').textContent = `Connecté en tant que ${this.currentUser.name}`;
@@ -128,8 +166,14 @@ class SocialMediaApp {
         this.currentUser = user;
         
         notifications.success('Connexion réussie !');
-        this.showProfilesSection();
-        await this.loadProfiles();
+        
+        // Show admin section if user is admin, otherwise show profiles
+        if (user.is_admin) {
+          this.showAdminDashboard();
+        } else {
+          this.showProfilesSection();
+          await this.loadProfiles();
+        }
       }
     } catch (error) {
       notifications.error('Erreur de connexion: ' + error.message);
@@ -300,6 +344,121 @@ class SocialMediaApp {
       }
     } catch (error) {
       notifications.error('Erreur lors de la synchronisation: ' + error.message);
+    }
+  }
+
+  // === ADMIN VIEWS ===
+
+  showUserProfiles() {
+    this.currentView = 'profiles';
+    this.hideAllSections();
+    document.getElementById('profiles-section').classList.remove('hidden');
+    this.updateActiveNavButton('profiles');
+  }
+
+  async showAdminDashboard() {
+    if (!this.currentUser || !this.currentUser.is_admin) {
+      notifications.error('Access denied. Admin privileges required.');
+      return;
+    }
+
+    this.currentView = 'admin-dashboard';
+    this.hideAllSections();
+    
+    const adminSection = document.getElementById('admin-section');
+    adminSection.classList.remove('hidden');
+    
+    if (!this.adminDashboard) {
+      this.adminDashboard = new AdminDashboard(apiClient);
+    }
+    
+    try {
+      await this.adminDashboard.loadDashboardData();
+      const dashboardContainer = document.getElementById('admin-content');
+      dashboardContainer.innerHTML = '';
+      dashboardContainer.appendChild(this.adminDashboard.render());
+    } catch (error) {
+      notifications.error('Error loading admin dashboard: ' + error.message);
+    }
+    
+    this.updateActiveNavButton('admin-dashboard');
+  }
+
+  async showAdminUsers() {
+    if (!this.currentUser || !this.currentUser.is_admin) {
+      notifications.error('Access denied. Admin privileges required.');
+      return;
+    }
+
+    this.currentView = 'admin-users';
+    this.hideAllSections();
+    
+    const adminSection = document.getElementById('admin-section');
+    adminSection.classList.remove('hidden');
+    
+    if (!this.adminUserManager) {
+      this.adminUserManager = new AdminUserManager(apiClient, notifications);
+      // Make it globally accessible for onclick handlers
+      window.adminUserManager = this.adminUserManager;
+    }
+    
+    try {
+      await this.adminUserManager.loadUsers();
+      const adminContent = document.getElementById('admin-content');
+      adminContent.innerHTML = '';
+      adminContent.appendChild(this.adminUserManager.render());
+    } catch (error) {
+      notifications.error('Error loading admin users: ' + error.message);
+    }
+    
+    this.updateActiveNavButton('admin-users');
+  }
+
+  async showAdminProfiles() {
+    if (!this.currentUser || !this.currentUser.is_admin) {
+      notifications.error('Access denied. Admin privileges required.');
+      return;
+    }
+
+    this.currentView = 'admin-profiles';
+    this.hideAllSections();
+    
+    const adminSection = document.getElementById('admin-section');
+    adminSection.classList.remove('hidden');
+    
+    if (!this.adminProfileManager) {
+      this.adminProfileManager = new AdminProfileManager(apiClient, notifications);
+      // Make it globally accessible for onclick handlers
+      window.adminProfileManager = this.adminProfileManager;
+    }
+    
+    try {
+      await this.adminProfileManager.loadProfiles();
+      const adminContent = document.getElementById('admin-content');
+      adminContent.innerHTML = '';
+      adminContent.appendChild(this.adminProfileManager.render());
+    } catch (error) {
+      notifications.error('Error loading admin profiles: ' + error.message);
+    }
+    
+    this.updateActiveNavButton('admin-profiles');
+  }
+
+  hideAllSections() {
+    document.getElementById('auth-section').classList.add('hidden');
+    document.getElementById('profiles-section').classList.add('hidden');
+    document.getElementById('admin-section').classList.add('hidden');
+  }
+
+  updateActiveNavButton(activeView) {
+    // Remove active class from all nav buttons
+    const navButtons = document.querySelectorAll('.nav-btn');
+    navButtons.forEach(btn => btn.classList.remove('active'));
+    
+    // Add active class to current view button
+    const activeButton = document.getElementById(`${activeView}-btn`);
+    if (activeButton) {
+      activeButton.classList.add('active');
     }
   }
 }

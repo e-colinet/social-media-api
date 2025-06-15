@@ -15,6 +15,14 @@
                 <button id="register-btn" class="nav-btn">Inscription</button>
                 <button id="logout-btn" class="nav-btn hidden">Déconnexion</button>
                 <span id="user-info" class="user-info hidden"></span>
+                
+                <!-- Admin Navigation -->
+                <div id="admin-nav" class="admin-nav hidden">
+                    <button id="profiles-btn" class="nav-btn">My Profiles</button>
+                    <button id="admin-dashboard-btn" class="nav-btn">Dashboard</button>
+                    <button id="admin-users-btn" class="nav-btn">Users</button>
+                    <button id="admin-profiles-btn" class="nav-btn">All Profiles</button>
+                </div>
             </nav>
         </header>
 
@@ -27,11 +35,11 @@
                         <form>
                             <div class="form-group">
                                 <label for="login-email">Email:</label>
-                                <input type="email" id="login-email" value="demo@example.com" required>
+                                <input type="email" id="login-email" value="admin@example.com" required>
                             </div>
                             <div class="form-group">
                                 <label for="login-password">Mot de passe:</label>
-                                <input type="password" id="login-password" value="password123" required>
+                                <input type="password" id="login-password" value="admin123" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Se connecter</button>
                         </form>
@@ -90,6 +98,15 @@
 
                     <div id="profiles-list" class="profiles-list">
                         <!-- Les profils seront chargés ici -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Admin Section -->
+            <section id="admin-section" class="section hidden">
+                <div class="admin-container">
+                    <div id="admin-content">
+                        <!-- Admin content will be loaded here -->
                     </div>
                 </div>
             </section>
