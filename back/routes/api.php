@@ -49,9 +49,3 @@ Route::get('/openapi.yaml', function () {
         'Content-Type' => 'application/x-yaml'
     ]);
 });
-
-Route::get('/openapi.json', function () {
-    return response()->file(base_path('openapi.json'), [
-        'Content-Type' => 'application/json'
-    ]);
-});
